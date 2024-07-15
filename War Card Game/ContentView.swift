@@ -27,9 +27,11 @@ struct ContentView: View {
                 }
                 Spacer()
                 
-                Button("Deal"){
+                Button{
                     deal()
-                }.foregroundColor(.white)
+                } label: {
+                    Image("button")
+                }
                 
                 Spacer()
                 HStack{
