@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var playerCard = "card7"
+    var cpuCard = "card13"
+    
     var body: some View {
         
         ZStack{
@@ -20,9 +24,9 @@ struct ContentView: View {
                 Spacer()
                 HStack{
                     Spacer()
-                    Image("card2")
+                    Image(playerCard)
                     Spacer()
-                    Image("card3")
+                    Image(cpuCard)
                     Spacer()
                 }
                 Spacer()
