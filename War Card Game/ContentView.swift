@@ -12,6 +12,9 @@ struct ContentView: View {
     var playerCard = "card7"
     var cpuCard = "card13"
     
+    var playerScore = 0
+    var cpuScore = 0
+    
     var body: some View {
         
         ZStack{
@@ -44,7 +47,7 @@ struct ContentView: View {
                         Text("Player")
                             .font(.headline)
                             .padding(.bottom, 10.0)
-                        Text("0")
+                        Text(String(playerScore))
                             .font(.largeTitle)
                     }
                     Spacer()
@@ -52,7 +55,7 @@ struct ContentView: View {
                         Text("CPU")
                             .font(.headline)
                             .padding(.bottom, 10.0)
-                        Text("0")
+                        Text(String(cpuScore))
                             .font(.largeTitle)
                     }
                     Spacer()
